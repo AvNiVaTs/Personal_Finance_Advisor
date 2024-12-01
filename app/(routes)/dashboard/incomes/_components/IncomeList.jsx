@@ -5,7 +5,7 @@ import { db } from "@/utils/dbConfig";
 import { desc, eq, getTableColumns, sql } from "drizzle-orm";
 import { Incomes, Expenses } from "@/utils/schema";
 import { useUser } from "@clerk/nextjs";
-import IncomeItem from "./IncomeItem";
+import IncomeItem from "IncomeItem";
 
 function IncomeList() {
   const [incomelist, setIncomelist] = useState([]);
